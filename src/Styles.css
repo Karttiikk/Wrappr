@@ -1,0 +1,293 @@
+/* General styles for responsiveness and background */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: linear-gradient(179.1deg, rgba(247, 238, 238, 1) -1.9%, rgba(247, 202, 201, 1) 44.9%, rgba(145, 168, 208, 1) 96.1%);
+  color: #333333; /* Adjust text color for better contrast */
+  height: 100vh; /* Ensure full viewport height coverage */
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box; /* Ensure padding is included in total width/height */
+}
+
+/* Navbar styles */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Add blur effect */
+  padding: 10px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Semi-transparent border */
+  width: 100%;
+  box-sizing: border-box; /* Ensure padding is included in total width */
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-logo {
+  width: 40px;
+  height: auto;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links li {
+  list-style-type: none;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #333333; /* Adjust link color */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #007bff; /* Adjust hover color */
+}
+
+/* Add Recipient button */
+.add-recipient-button {
+  background-color: #6a0dad;
+  color: #ffffff;
+  border: none;
+  padding: 16px 32px; /* Increased button size */
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 20px auto; /* Center the button horizontally */
+  display: block; /* Ensure it takes up full width */
+  font-size: 20px; /* Increased font size */
+}
+
+.add-recipient-button:hover {
+  background-color: #7f1eb3;
+}
+
+/* Modal styles */
+.modal {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  box-sizing: border-box; /* Ensure padding is included in total width */
+}
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal h2 {
+  margin-bottom: 20px;
+}
+
+/* Home section styles */
+
+.home-section {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  font-size: 28px; /* Increased font size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 40px); /* Adjust height to fit viewport, considering margins */
+  text-align: center; /* Center text horizontally */
+  box-sizing: border-box; /* Ensure padding is included in total width/height */
+}
+
+/* Profile section styles */
+.profile-section {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  font-size: 50px; /* Increased font size */
+  box-sizing: border-box; /* Ensure padding is included in total width */
+}
+
+/* Recipient list styles */
+.recipient-list {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  box-sizing: border-box; /* Ensure padding is included in total width */
+}
+
+.recipient-name {
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.recipient-name:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Recipient profile styles */
+.recipient-profile {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensure padding is included in total width */
+}
+
+.recipient-profile h2 {
+  margin-bottom: 20px;
+}
+
+/* Gift form styles */
+.gift-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box; /* Ensure padding is included in total width */
+}
+
+.gift-form input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box; /* Ensure padding is included in total width */
+}
+
+.gift-submit-button {
+  padding: 12px 24px; /* Increased button size */
+  background-color: #6a0dad;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-sizing: border-box; /* Ensure padding is included in total width */
+}
+
+.gift-submit-button:hover {
+  background-color: #7f1eb3;
+}
+
+/* Gift list styles */
+.gift-list {
+  list-style-type: none;
+  padding: 0;
+  box-sizing: border-box; /* Ensure padding is included in total width */
+}
+
+.gift-item {
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box; /* Ensure padding is included in total width */
+}
+
+.gift-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.gift-item img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 4px;
+  margin-left: 10px;
+  box-sizing: border-box; /* Ensure padding is included in total width */
+}
+
+.gift-actions {
+  display: flex;
+  gap: 10px;
+  box-sizing: border-box; /* Ensure padding is included in total width */
+}
+
+.mark-purchased-button,
+.delete-gift-button {
+  padding: 8px 16px;
+  background-color: #dc3545;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-sizing: border-box; /* Ensure padding is included in total width */
+}
+
+.mark-purchased-button:hover,
+.delete-gift-button:hover {
+  background-color: #c82333;
+}
+
+@media (max-width: 480px) {
+  .add-recipient-button,
+  .recipient-submit-button,
+  .gift-submit-button,
+  .mark-purchased-button,
+  .delete-gift-button {
+    width: 100%;
+    font-size: 14px;
+    box-sizing: border-box; /* Ensure padding is included in total width */
+  }
+
+  .gift-form,
+  .recipient-form,
+  .recipient-profile,
+  .recipient-name,
+  .gift-item {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box; /* Ensure padding is included in total width */
+  }
+
+  .gift-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box; /* Ensure padding is included in total width */
+  }
+
+  .gift-actions button {
+    width: 100%;
+    margin-top: 10px;
+    box-sizing: border-box; /* Ensure padding is included in total width */
+  }
+}
