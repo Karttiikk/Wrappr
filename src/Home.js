@@ -1,4 +1,4 @@
-// src/components/Home.js
+
 import React from 'react';
 import './Home.css';
 
@@ -14,7 +14,7 @@ const Home = () => {
         </p>
       </div>
       <div className="home-image">
-        {/* <img src="/home.png" alt="Gifts" /> */}
+        <img src="/home.png" alt="Gifts" />
       </div>
     </div>
   );

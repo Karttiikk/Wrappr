@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to right bottom, #1f0514, #41303b, #675b66, #908892, #bdbac0, #bbbabe, #bab9bb, #b9b9b9, #878787, #585858, #2e2e2e, #000000);
+    color: #ffffff;
+    min-height: 100vh;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+  }
+  

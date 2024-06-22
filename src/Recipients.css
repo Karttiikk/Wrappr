@@ -1,4 +1,4 @@
-/* src/components/Recipients.css */
+
 .recipients-container {
     padding: 20px;
     display: flex;
@@ -48,7 +48,7 @@
   }
   
   .recipient-tile {
-    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    background-color: rgba(19, 18, 18, 0.9); 
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -83,7 +83,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f1f1f1;
+    background-color: #060606;
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 5px;

@@ -1,4 +1,3 @@
-// src/components/Gifts.js
 import React, { useState } from 'react';
 import './Gifts.css';
 

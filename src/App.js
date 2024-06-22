@@ -4,6 +4,7 @@ import NavBar from './NavBar';
 import Home from './Home';
 import Gifts from './Gifts';
 import Recipients from './Recipients';
+import './Global.css'; 
 
 function App() {
   const [gifts, setGifts] = useState([]);

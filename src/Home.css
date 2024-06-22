@@ -1,10 +1,13 @@
-/* src/components/Home.css */
+
+
+
 .home-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 40px;
     background: rgba(255, 255, 255, 0.8);
+    background-image: linear-gradient(to right bottom, #1f0514, #41303b, #675b66, #908892, #bdbac0, #bbbabe, #bab9bb, #b9b9b9, #878787, #585858, #2e2e2e, #000000);
     min-height: calc(100vh - 70px); /* Adjust based on the height of your NavBar */
   }
   
